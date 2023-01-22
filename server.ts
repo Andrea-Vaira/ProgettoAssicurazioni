@@ -239,6 +239,10 @@ app.use("/api/", function (req: any, res: any, next: NextFunction) {
 
 /* ********************* (Sezione 3) USER ROUTES  ************************** */
 
+app.get("/api/MAP_KEY", (req: any, res: Response, next: NextFunction) => {
+  res.send({key:process.env.MAP_KEY});
+});
+
 app.get("/api/perizie", (req: any, res: Response, next: NextFunction) => {
   let collection = req["connessione"].db(DBNAME).collection("perizie");
   collection.find({}).toArray((err: Error, data: any) => {
@@ -322,15 +326,15 @@ app.get("/api/operatori", (req: any, res: Response, next: NextFunction) => {
 app.post("/api/employ", (req: any, res: Response, next: NextFunction) => {
   let nome = req.body.name;
   let mail = req.body.mail;
-  bcrypt.genSalt(10, function(err, salt){
-    bcrypt.hash('password', salt, function (err, hash) {
+  bcrypt.genSalt(10, function (err, salt) {
+    bcrypt.hash("password", salt, function (err, hash) {
       let record = {
         password: hash,
         nome: nome,
         mail: mail,
         nPerizie: "0",
         '"img"':
-          "https://res.cloudinary.com/dfrqbcbln/image/upload/v1672932919/assicurazioni/img_avatar_e9p0bx.png"
+          "https://res.cloudinary.com/dfrqbcbln/image/upload/v1672932919/assicurazioni/img_avatar_e9p0bx.png",
       };
 
       let collection = req["connessione"].db(DBNAME).collection("operatori");
@@ -339,14 +343,12 @@ app.post("/api/employ", (req: any, res: Response, next: NextFunction) => {
           res.status(500);
           res.send("Errore esecuzione query");
         } else {
-          res.send({ris:'ok'});
+          res.send({ ris: "ok" });
         }
         req["connessione"].close();
       });
     });
-  })
-  
-  
+  });
 });
 /* ********************** (Sezione 4) DEFAULT ROUTE  ************************* */
 // Default route

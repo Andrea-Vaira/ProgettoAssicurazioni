@@ -10,10 +10,16 @@ let commenti = {
 
 $(document).ready(function () {
   // creazione dinamica del CDN di accesso alle google maps
-  var script = document.createElement("script");
-  script.type = "text/javascript";
-  script.src = url + "/js?v=3&key=" + MAP_KEY + "&callback=documentReady";
-  document.body.appendChild(script);
+  let request = inviaRichiesta("GET", "/api/MAP_KEY");
+  request.fail(errore);
+  request.done(function (key) {
+    console.log(key.key);
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src =
+      url + "/js?v=3&key=" + key.key + "&callback=documentReady";
+    document.body.appendChild(script);
+  });
 });
 
 function documentReady() {
