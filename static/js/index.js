@@ -13,7 +13,7 @@ $(document).ready(function () {
   let request = inviaRichiesta("GET", "/api/MAP_KEY");
   request.fail(errore);
   request.done(function (key) {
-    console.log(key.key);
+    console.log(url + "/js?v=3&key=" + key.key + "&callback=documentReady");
     var script = document.createElement("script");
     script.type = "text/javascript";
     script.src =
