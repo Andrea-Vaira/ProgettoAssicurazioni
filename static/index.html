@@ -1,8 +1,5 @@
 <!doctype html>
 <html lang="it">
-<!-- 
-        USER AREA
- -->
 
 <head>
     <meta charset="UTF-8" />
@@ -14,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
     <link rel="stylesheet" href="index.css">
     <script type="text/javascript" src="js/libreria.js"></script>
@@ -22,7 +20,7 @@
     <script type="text/javascript" src="js/mappa.js"></script>
     <!--Per le animazioni-->
     <script type="text/javascript" src="js/graphicEffects.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/adminArea.js"></script>
 </head>
 
 <body>
@@ -37,34 +35,33 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                    <a class="nav-link" href="#" id="btnHome">Home <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#" id="btnFilter">Employee filter<span class="sr-only"></span></a>
                 </li>
 
             </ul>
-            <button type="button" class="btn btn-success">Create new user</button>
+            <button type="button" class="btn btn-success" id="btnNewUser">Create new user</button>
         </div>
     </nav>
 
     <!--Home-->
     <div id="home">
         <div id="map"></div>
-        <div id="filter">
-            <div class="form-group">
-                <label for="exampleInputPassword1" style="font-weight: bold; color: white;">Find name</label>
-                <input type="text" class="form-control" id="exampleInputPassword1">
-            </div>
-            <ul class="list-group list-group-flush"></ul>
+        <div id="filter" style="background-color: white; border-radius: 10px; text-align: center;">
+            <h3 style="margin-top: 8px;">Employers</h3>
+            <ul class="list-group list-group-flush" style="border-radius: 10px;">
+            </ul>
         </div>
     </div>
 
-    <div id="perizia">
-        <div id="dettagliPerizia">
-            <h1>Dettagli perizia</h1>
-            <img src="" alt="">
-            <h3>Nome Operatore</h3>
+    <div id="perizia" style="width: 80%;  margin: 5% 10%; display: block; margin-bottom: 0; ">
+        <div id="dettagliPerizia"
+            style="background-color: white; padding: 20px; border-radius: 10px 10px; width: 46%;  display: inline-block; margin-right: 7%;">
+            <h1 style="text-align: center; font-weight: bold;">Dettagli perizia</h1>
+            <img src="" alt="" style="border-radius: 50% 50%; width: 100px; height: 100px;">
+            <h3 style="display: inline-block; margin-left: 30px;">Nome Operatore</h3>
             <br>
             <h3><b>DataOra: </b></h3>
             <h4>12/12/1200 10:12</h4>
@@ -74,17 +71,19 @@
             <br>
             <h3><b>Descrizione</b></h3>
             <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
+                    style="border-radius: 0 0 10px 10px; border: 0px solid black; font-size: larger;"></textarea>
             </div>
         </div>
         <div id="divMappaPercorso">
-            <div id="mappaPercorso" >
+            <div id="mappaPercorso">
             </div>
-            <h3>Tempo di percorrenza:
+            <h3 style="text-align:center; color: white; margin-left: 20px; margin-top: 8px;">Tempo di percorrenza:
                 <span id="tempoPercorrenza">10 min</span>
             </h3>
         </div>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"data-interval="false">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+            style="margin-top: 5%; display: block; margin-bottom: 0;" data-interval="false">
             <div class="carousel-inner" style="border-radius: 10px 10px 0 0; ">
 
             </div>
@@ -99,15 +98,25 @@
         </div>
         <div id="commentCarousel" style=" display: block;">
             <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea2" rows="6"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea2" rows="6"
+                    style="border-radius: 0 0 10px 10px; font-size: larger;"></textarea>
             </div>
-            <button type="button" class="btn btn-success btn-lg">Replace</button>
+            <button type="button" class="btn btn-success btn-lg"
+                style="float: right; font-weight: bold; margin-bottom: 20px;">Replace</button>
         </div>
 
     </div>
 
     <div id="newUser">
-        
+        <div id="card">
+            <iconify-icon icon="mingcute:user-add-fill" width="150"></iconify-icon>
+            <input type="text" placeholder="Type employer name here..." id="newNameEmployer">
+            <input type="text" placeholder="Type employer email here..." id="newMailEmployer">
+            <button id="btnEmploy">Employ</button>
+            <div class="alert alert-success alert-dismissible" id="lblSuccess" style="width: 80%; margin-left: 10%;">
+                New employer added correctly
+            </div>
+        </div>
     </div>
 </body>
 

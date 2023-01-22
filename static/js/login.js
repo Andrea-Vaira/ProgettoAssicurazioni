@@ -42,8 +42,8 @@ $(document).ready(function () {
       });
       request.done(function (data, test_status, jqXHR) {
         //alert(jqXHR.getResponseHeader("Authorization"));
-        if (_username.val() == "admin@gmail.com")
-          window.location.href = "adminArea.html";
+        if (_username.val() != "admin@gmail.com")
+          window.location.href = "userArea.html";
         else window.location.href = "index.html";
       });
     }
