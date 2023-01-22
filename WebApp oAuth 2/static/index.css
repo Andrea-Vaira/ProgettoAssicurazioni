@@ -1,0 +1,186 @@
+body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='580' preserveAspectRatio='none' viewBox='0 0 1440 580'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1473%26quot%3b)' fill='none'%3e%3crect width='1440' height='580' x='0' y='0' fill='url(%23SvgjsLinearGradient1474)'%3e%3c/rect%3e%3cpath d='M 0%2c105 C 96%2c139 288%2c272 480%2c275 C 672%2c278 768%2c128.6 960%2c120 C 1152%2c111.4 1344%2c209.6 1440%2c232L1440 580L0 580z' fill='%23184a7e'%3e%3c/path%3e%3cpath d='M 0%2c395 C 72%2c422.4 216%2c545.8 360%2c532 C 504%2c518.2 576%2c338.4 720%2c326 C 864%2c313.6 936%2c468.4 1080%2c470 C 1224%2c471.6 1368%2c361.2 1440%2c334L1440 580L0 580z' fill='rgba(40%2c 113%2c 192%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1473'%3e%3crect width='1440' height='580' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='85.07%25' y1='-37.07%25' x2='14.93%25' y2='137.07%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1474'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(1%2c 48%2c 110%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /*scroll-behavior: smooth;*/
+}
+
+#map {
+  width: 75%;
+  height: 88%;
+  position: absolute;
+  margin: 20px 20px;
+  border-radius: 15px 15px;
+  display: block;
+}
+
+#perizia {
+  width: 80%;
+  margin: 5% 10%;
+  display: flex;
+  margin-bottom: 0;
+}
+#dettagliPerizia {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px 10px;
+  display: block;
+  margin-right: 7%;
+}
+#dettagliPerizia h1 {
+  text-align: center;
+  font-weight: bold;
+}
+#dettagliPerizia img {
+  border-radius: 50% 50%;
+  width: 100px;
+  height: 100px;
+}
+#dettagliPerizia h3 {
+  display: inline-block;
+  margin-left: 30px;
+}
+#dettagliPerizia > h3,
+#dettagliPerizia > h4 {
+  display: inline-block;
+  margin-top: 10px;
+}
+#dettagliPerizia textarea {
+  border-radius: 0 0 10px 10px;
+  border: 0px solid black;
+  font-size: larger;
+}
+
+#divMappaPercorso {
+  border-radius: 10px 10px;
+  width: 37%;
+  height: 58%;
+  display: inline-block;
+  position: absolute;
+}
+#divMappaPercorso img {
+  text-align: center;
+  color: white;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+#mappaPercorso {
+  width: 100%;
+  height: 91%;
+  border-radius: 10px 10px;
+}
+
+#carouselExampleControls {
+  margin-top: 5%;
+  display: block;
+  margin-bottom: 0;
+}
+
+#commentCarousel textarea {
+  border-radius: 0 0 10px 10px;
+  font-size: larger;
+}
+#commentCarousel button {
+  float: right;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#filter {
+  float: right;
+  width: 22%;
+  margin-top: 20px;
+  margin-right: 1%;
+  display: block;
+}
+
+.infoWindow {
+  width: 170px;
+  height: 170px;
+  padding: 15px;
+  background-size: cover;
+  background-origin: paddig-box;
+  opacity: 0.85;
+  font-size: 12pt;
+}
+
+/*NEW USER*/
+#card{
+	width: 30%;
+	margin: 10% auto;
+
+	background: #D9D9D9;
+	border-radius: 15px;
+	padding: 30px 0;
+}
+
+iconify-icon {
+	width: 150px;
+	height: 150px;
+	margin: 40px auto;
+	margin-top: 0px;
+	display: block;
+}
+
+#newUser input{
+	display: block;
+	margin: 25px auto;
+	background: #FFFFFF;
+		opacity: 0.6;
+		box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+		border-radius: 10px;
+		border: none;
+		width:60%;
+		height: 40px;
+		padding-left: 8px;
+		font-size: 16pt;
+}
+
+#btnLogin, #btnEmploy{
+	display: block;
+	margin: 25px auto;
+		margin-top: 40px;
+	box-sizing: border-box;
+	
+	
+		background: #000000;
+		opacity: 0.6;
+		box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+		border-radius: 10px;
+		color: white;
+		font-size: 20pt;
+		font-weight: bold;
+		width: 60%;
+		height: 4%;
+		border:none;
+}
+
+#newUser hr{
+	width: 50%;
+	height: 2px;
+}
+
+#google-signin-button{
+	display: inline-block;
+	margin: 25px auto;
+		background-color: #D9D9D9;
+	margin-left: 28%;
+}
+
+@media screen and (max-width: 850px) {
+	#card{
+		width: 90%;
+	}
+	#newUser input{
+		width: 80%;
+	}
+	#btnLogin{
+		width: 80%;
+	}
+	#google-signin-button{
+		margin-left: 17%;
+	}
+
+}

@@ -1,0 +1,205 @@
+body {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='580' preserveAspectRatio='none' viewBox='0 0 1440 580'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1473%26quot%3b)' fill='none'%3e%3crect width='1440' height='580' x='0' y='0' fill='url(%23SvgjsLinearGradient1474)'%3e%3c/rect%3e%3cpath d='M 0%2c105 C 96%2c139 288%2c272 480%2c275 C 672%2c278 768%2c128.6 960%2c120 C 1152%2c111.4 1344%2c209.6 1440%2c232L1440 580L0 580z' fill='%23184a7e'%3e%3c/path%3e%3cpath d='M 0%2c395 C 72%2c422.4 216%2c545.8 360%2c532 C 504%2c518.2 576%2c338.4 720%2c326 C 864%2c313.6 936%2c468.4 1080%2c470 C 1224%2c471.6 1368%2c361.2 1440%2c334L1440 580L0 580z' fill='rgba(40%2c 113%2c 192%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1473'%3e%3crect width='1440' height='580' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='85.07%25' y1='-37.07%25' x2='14.93%25' y2='137.07%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1474'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(1%2c 48%2c 110%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.titolo{
+	font-size:15pt;
+	font-weight:bold;
+	margin-top:10px;
+}
+
+		
+.icona-rossa{
+	color: #dc3545;  
+	border:1px solid #dc3545; 
+	border-right:transparent;
+}
+
+.login-block {
+	margin: 30px auto;
+	min-height: 93.6vh
+}
+
+.login-block .auth-box {
+	margin: 20px auto 0;
+	max-width: 450px !important
+}
+
+.card {
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1);
+	box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1);
+	border: none;
+	margin-bottom: 30px;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	background-color: #fff;
+}
+
+.card .card-block {
+	padding: 1.25rem
+}
+
+.f-80 {
+	font-size: 80px
+}
+
+.form-group {
+	margin-bottom: 1.25em
+}
+
+.form-material .form-control {
+	display: inline-block;
+	height: 43px;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 9px;
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-bottom: 1px solid #ccc
+}
+
+.btn-md {
+	padding: 10px 16px;
+	font-size: 15px;
+	line-height: 23px
+}
+
+.btn-primary {
+	background-color: #4099ff;
+	border-color: #4099ff;
+	color: #fff;
+	cursor: pointer;
+	-webkit-transition: all ease-in .3s;
+	transition: all ease-in .3s
+}
+
+.btn {
+	border-radius: 2px;
+	text-transform: capitalize;
+	font-size: 15px;
+	padding: 10px 19px;
+	cursor: pointer
+}
+
+.m-b-20 {
+	margin-bottom: 20px
+}
+
+.btn-md {
+	padding: 10px 16px;
+	font-size: 15px;
+	line-height: 23px
+}
+
+
+#infoMessage p {
+
+	color: red !important;
+}
+
+
+.or-container {
+	align-items: center;
+	color: #ccc;
+	display: flex;
+	margin: 25px 0;
+}
+
+.line-separator {
+	background-color: #ccc;
+	flex-grow: 5;
+	height: 1px;
+}
+
+.or-label {
+	flex-grow: 1;
+	margin: 0 15px;
+	text-align: center;
+}
+
+#card{
+	width: 30%;
+	margin: 10% auto;
+
+	background: #D9D9D9;
+	border-radius: 15px;
+	padding: 30px 0;
+}
+
+#logo{
+	width: 150px;
+	height: 150px;
+	margin: 40px auto;
+	margin-top: 0px;
+	display: block;
+}
+
+input{
+	display: block;
+	margin: 25px auto;
+	background: #FFFFFF;
+		opacity: 0.6;
+		box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+		border-radius: 10px;
+		border: none;
+		width:60%;
+		height: 40px;
+		padding-left: 8px;
+		font-size: 16pt;
+}
+
+#btnLogin{
+	display: block;
+	margin: 25px auto;
+		margin-top: 40px;
+	box-sizing: border-box;
+	
+	
+		background: #000000;
+		opacity: 0.6;
+		box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+		border-radius: 10px;
+		color: white;
+		font-size: 20pt;
+		font-weight: bold;
+		width: 60%;
+		height: 4%;
+		border:none;
+}
+
+hr{
+	width: 50%;
+	height: 2px;
+}
+
+#google-signin-button{
+	display: inline-block;
+	margin: 25px auto;
+		background-color: #D9D9D9;
+	margin-left: 28%;
+}
+
+@media screen and (max-width: 850px) {
+	#card{
+		width: 90%;
+	}
+	input{
+		width: 80%;
+	}
+	#btnLogin{
+		width: 80%;
+	}
+	#google-signin-button{
+		margin-left: 17%;
+	}
+
+}

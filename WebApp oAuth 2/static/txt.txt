@@ -1,0 +1,144 @@
+<div class="container" style="margin-top:60px">
+
+		<!-- JUMBOTRON  -->
+		<div class="row">
+			<div class="col-md-3 col-sm-2"></div>
+			<div class="col-md-6 col-sm-8">
+				<div class="jumbotron text-center" data-toggle="collapse" data-target="#login">
+					<img src="img/logo.png" width="120" class="rounded-circle">
+					<h4 class="titolo">IIS Vallauri - Fossano</h4>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-2"></div>
+		</div>
+
+
+		<!-- LOGIN FORM -->
+		<div class="row collapse" id="login">
+			<div class="col-md-3 col-sm-2"></div>
+			<div class="col-md-6 col-sm-8">
+				<form id="frmLogin">
+					<div class="form-group input-group">
+						<!-- Quando mettiamo l'icona aggiungiamo anche input-group  
+					     in modo che icona e inputBox vengano raggruppati 
+						 sulla stessa riga -->
+						<span class="input-group-text">
+							<i class="fas fa-user"> </i>
+						</span>
+						<input type="text" class="form-control" id="usr" placeholder="Username">
+					</div>
+
+					<!-- password -->
+					<div class="form-group input-group">
+						<span class="input-group-text">
+							<i class="fas fa-lock"> </i>
+						</span>
+						<input type="password" class="form-control" id="pwd" placeholder="Password">
+					</div>
+
+
+					<!-- messaggio di errore -->
+					<div class="alert alert-danger alert-dismissible" id="lblErrore">
+						<!-- Dentro button è stato eliminato data-dismiss="alert"
+                         che non consente più il successivo .show() del msg -->
+						<button type="button" class="close">&times;</button>
+						<strong>Attenzione!</strong> Username o Password non validi
+					</div>
+
+
+					<!-- pulsanti -->
+					<div class="form-group">
+						<button type="button" class="btn btn-secondary btn-block" id="btnLogin"> LOGIN
+						</button>
+						<button type="button" class="btn btn-link" style="height:18px">
+							registrati
+						</button>
+						<br>
+						<button type="button" class="btn btn-link" style="height:18px">
+							hai dimenticato la password?
+						</button>
+					</div>
+				</form>
+			</div>
+			<!-- fine col-sm-4 -->
+			<div class="col-md-3 col-sm-3"></div>
+		</div>
+		<!-- form login -->
+
+	</div>
+
+
+
+
+
+
+BOOTSTRAP	
+<section class="login-block">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">
+					<form class="md-float-material form-material" action="#" method="POST" id="frmLogin">
+						<div class="auth-box card" style="padding-top:2%">
+
+							<div class="card-block">
+								<div class="row">
+									<div class="col-md-12">
+										<h1 class="text-center heading">Welcome!</h1>
+
+									</div>
+								</div>
+
+								<div class="form-group form-primary">
+									<input type="text" class="form-control" name="email" value="" placeholder="Email"
+										id="usr">
+
+								</div>
+
+								<div class="form-group form-primary">
+									<input type="password" class="form-control" name="password" placeholder="Password"
+										value="" id="pwd">
+
+								</div>
+								<div class="alert alert-danger alert-dismissible" id="lblErrore">
+									<!-- Dentro button è stato eliminato data-dismiss="alert"
+                         che non consente più il successivo .show() del msg -->
+									<button type="button" class="close">&times;</button>
+									<strong>Attenzione!</strong> Username o Password non validi
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+
+										<input type="button"
+											class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20"
+											name="submit" value="Login" id="btnLogin">
+										<!--  <button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20"><i class="fa fa-lock"></i> Signup Now </button> -->
+									</div>
+								</div>
+
+								<div class="or-container">
+									<div class="line-separator"></div>
+									<div class="or-label">or</div>
+									<div class="line-separator"></div>
+								</div>
+
+
+								<div class="row">
+									<div class="col-md-12">
+										<a class="btn btn-lg btn-google btn-block text-uppercase btn-outline"
+											href="#"><img src="https://img.icons8.com/color/16/000000/google-logo.png">
+											Login Using
+											Google</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<div id="googleDiv"></div>
+
+	<button id="google">log google</button>

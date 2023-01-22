@@ -1,0 +1,15 @@
+{
+  "_id": {
+    "$oid": "63ad61e3aa3bc839cdc8dfdd"
+  },
+  "codOperatore": "63ad5d73aa3bc839cdc8dfd7",
+  "data-ora": "Thu Dec 29 2022 10:35:20 GMT+0100 (Ora standard dell'Europa centrale)",
+  "coordinate": { "latitude": 44.6933045, "longitude": 7.8522384999999995 },
+  "descrizione": "perizia di prova",
+  "foto": [
+    {
+      "img": "https://res.cloudinary.com/dfrqbcbln/image/upload/v1672307098/assicurazioni/Immagine_2022-12-17_125134_ry7jt4.png",
+      "commento": "Commento di prova"
+    }
+  ]
+}

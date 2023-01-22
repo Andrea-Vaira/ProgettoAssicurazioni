@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JWT</title>
+	<link rel="icon" href="img/icoVallauri.png" type="image/png" />
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="login.css">
+	<script src="https://accounts.google.com/gsi/client" async defer></script>
+	<script type="text/javascript" src="js/libreria.js"></script>
+	<script src="js/login.js"></script>
+</head>
+
+<body>
+	<div id="card">
+		<img src="img/mdi-user-circle.png" id="logo" />
+		<input type="text" placeholder="Type your email here..." id="usr">
+		<input type="password" placeholder="Type your password here..." id="pwd">
+		<div class="alert alert-danger alert-dismissible" id="lblErrore" style="width: 80%; margin-left: 10%;">
+			<!-- Dentro button è stato eliminato data-dismiss="alert"
+		                         che non consente più il successivo .show() del msg -->
+			<button type="button" class="close">&times;</button>
+			<strong>Attention!</strong> wrong email or password.
+		</div>
+		<button id="btnLogin">Login</button>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<a class="btn btn-lg btn-google btn-block text-uppercase btn-outline" href="#" id="btnLoginGoogle"><img
+						src="https://img.icons8.com/color/16/000000/google-logo.png">
+					Login Using
+					Google</a>
+			</div>
+		</div>
+		<div id="google-signin-button"></div>
+	</div>
+</body>
+
+</html>
