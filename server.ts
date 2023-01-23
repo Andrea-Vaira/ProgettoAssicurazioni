@@ -240,7 +240,8 @@ app.use("/api/", function (req: any, res: any, next: NextFunction) {
 /* ********************* (Sezione 3) USER ROUTES  ************************** */
 
 app.get("/api/MAP_KEY", (req: any, res: Response, next: NextFunction) => {
-  res.send({key:process.env.MAP_KEY});
+  let mapKey = process.env.MAP_KEY
+  res.send({key:mapKey});
 });
 
 app.get("/api/perizie", (req: any, res: Response, next: NextFunction) => {
