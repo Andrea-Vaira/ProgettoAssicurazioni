@@ -17,7 +17,7 @@ $(document).ready(function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
     script.src =
-      url + "/js?v=3&key=" + key.key + "&callback=documentReady";
+      `${url}/js?v=3&key=${JSON.parse(key).key}&callback=documentReady`;
     document.body.appendChild(script);
   });
 });
